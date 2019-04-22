@@ -14,8 +14,10 @@ topic = "basic-python-producer-topic"
 for i in range(5):
     key = "key-" + str(i)
     value = "value-" + str(i)
-    producer.produce(topic=topic, key=key.encode(
+    producer.produce(topic, key=key.encode(
         'utf-8'), value=value.encode('utf-8'))
     print("Produced:", key, value)
+
+producer.flush()
 
 print("End: basic-python-producer")
