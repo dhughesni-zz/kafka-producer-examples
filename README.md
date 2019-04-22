@@ -1,5 +1,3 @@
-
-=======
 # kafka-producer-examples
 Basic Apache Kafka Producer Examples
 
@@ -11,9 +9,9 @@ Basic Apache Kafka Producer Examples
 # BASIC-JAVA-PRODUCER
 ## Project Setup: basic-java-producer
 ```
-mvn -B archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.dh.app -DartifactId=basic-java-producer
-- https://docs.confluent.io/current/clients/install.html#installation-maven
+$ mvn -B archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.dh.app -DartifactId=basic-java-producer
 ```
+- https://docs.confluent.io/current/clients/install.html#installation-maven
 ## To Run: basic-java-producer
 ```
 kafka-producer-example/basic-java-producer $ mvn clean compile exec:java -Dexec.mainClass="com.dh.app.App"
