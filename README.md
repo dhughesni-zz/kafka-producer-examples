@@ -19,7 +19,7 @@ kafka-producer-example/basic-java-producer $ mvn clean compile exec:java -Dexec.
 
 ---
 
-## BASIC-PYTHON-PRODUCER
+# BASIC-PYTHON-PRODUCER
 ## Project Setup: basic-python-producer
 ```
 kafka-producer-example $ mkdir basic-python-producer
