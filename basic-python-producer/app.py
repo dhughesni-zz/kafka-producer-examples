@@ -3,10 +3,8 @@ from confluent_kafka import Producer
 print("Start: basic-python-producer")
 
 props = {
-    'client.id': "basic-java-producer",
+    'client.id': "basic-python-producer",
     'bootstrap.servers': "localhost:9092",
-    # 'key.serializer': "org.apache.kafka.common.serialization.StringSerializer",
-    # 'value.serializer': "org.apache.kafka.common.serialization.StringSerializer"
 }
 
 producer = Producer(props)
