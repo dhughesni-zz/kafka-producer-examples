@@ -1,6 +1,6 @@
 from confluent_kafka import Producer
 
-print("Start: basic-java-producer")
+print("Start: basic-python-producer")
 
 props = {
     'client.id': "basic-java-producer",
@@ -20,4 +20,4 @@ for i in range(5):
         'utf-8'), value=value.encode('utf-8'))
     print("Produced:", key, value)
 
-print("End: basic-java-producer")
+print("End: basic-python-producer")
