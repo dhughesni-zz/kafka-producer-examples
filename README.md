@@ -1,11 +1,14 @@
 
-
-# BASIC-JAVA-PRODUCER
+=======
+# kafka-producer-examples
+Basic Apache Kafka Producer Examples
 
 ## References
 - https://docs.confluent.io/current/clients/producer.html#ak-java-producer
 - https://docs.confluent.io/current/clients/confluent-kafka-python/
 
+
+# BASIC-JAVA-PRODUCER
 ## Project Setup: basic-java-producer
 ```
 mvn -B archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.dh.app -DartifactId=basic-java-producer
@@ -19,7 +22,6 @@ kafka-producer-example/basic-java-producer $ mvn clean compile exec:java -Dexec.
 ---
 
 ## BASIC-PYTHON-PRODUCER
-
 ## Project Setup: basic-python-producer
 ```
 kafka-producer-example $ mkdir basic-python-producer
