@@ -27,25 +27,31 @@ kafka-producer-example/basic-java-producer $ mvn clean compile exec:java -Dexec.
 
 ---
 
-# BASIC-PYTHON-PRODUCER
-## Project Setup: basic-python-producer
+# python-producers
+## Project Setup: python-producers
 ```
-kafka-producer-example $ mkdir basic-python-producer
+kafka-producer-example $ mkdir python-producers
 <!-- create virtual env -->
-kafka-producer-example/basic-python-producer $ python3 -m venv venv
+kafka-producer-example/python-producers $ python3 -m venv venv
 <!-- source venv -->
-kafka-producer-example/basic-python-producer $ source venv/bin/activate
-<!-- install confluent_kafka -->
-kafka-producer-example/basic-python-producer $ pip install confluent_kafka
+kafka-producer-example/python-producers $ source venv/bin/activate
+<!-- install dependencies -->
+kafka-producer-example/python-producers $ pip install confluent_kafka
 <!-- export to requirements.txt -->
-kafka-producer-example/basic-python-producer $ pip freeze > requirements.txt
-<!-- make the app file -->
-kafka-producer-example/basic-python-producer $ touch app.py
+kafka-producer-example/python-producers $ pip freeze > requirements.txt
+<!-- make the app files -->
+kafka-producer-example/python-producers $ touch basic-python-producer.py
+kafka-producer-example/python-producers $ touch avro-python-producer.py
 ```
-## To Run: basic-python-producer
+## To Run: python-producers
 ```
-kafka-producer-example/basic-python-producer $ python3 -m venv venv
-kafka-producer-example/basic-python-producer $ source venv/bin/activate
-kafka-producer-example/basic-python-producer $ pip install -r requirements.txt
-kafka-producer-example/basic-python-producer $ python3 app.py
+kafka-producer-example/python-producers $ python3 -m venv venv
+kafka-producer-example/python-producers $ source venv/bin/activate
+kafka-producer-example/python-producers $ pip install -r requirements.txt
+kafka-producer-example/python-producers $ python3 basic-python-producer.py
+<!-- Examples included for the following naming strategies:
+- io.confluent.kafka.serializers.subject.TopicNameStrategy
+- io.confluent.kafka.serializers.subject.RecordNameStrategy
+- io.confluent.kafka.serializers.subject.TopicRecordNameStrategy  -->
+kafka-producer-example/python-producers $ python3 avro-python-producer.py
 ```
