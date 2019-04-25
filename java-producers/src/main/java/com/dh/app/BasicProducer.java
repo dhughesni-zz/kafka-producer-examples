@@ -4,7 +4,7 @@ import java.util.Properties;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 
-public class App {
+public class BasicProducer {
     public static void main(String[] args) {
 
         System.out.println("Start: basic-java-producer");
