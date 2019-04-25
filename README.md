@@ -4,7 +4,7 @@ Basic Apache Kafka Producer Examples
 ## References
 - https://docs.confluent.io/current/clients/producer.html#ak-java-producer
 - https://docs.confluent.io/current/clients/confluent-kafka-python/
-
+- https://docs.confluent.io/current/schema-registry/serializer-formatter.html#
 
 # *Start Confluent Stack*
 ```
