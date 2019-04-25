@@ -22,17 +22,17 @@ schema_registry = CachedSchemaRegistryClient("http://localhost:8081")
 avro_serde = MessageSerializer(schema_registry)
 
 # convert json to avro schema
-schema = avro.schema.Parse(json.dumps({
-    "namespace": "my.test",
-    "name": "value",
-    "type": "record",
-    "fields": [
-        {
-            "name": "string",
-            "type": "string"
-        }
-    ]
-}))
+schema = avro.schema.Parse(json.dumps(
+    { 
+        "namespace": "test.value.avro",
+        "type": "record",
+        "name": "avroValue",
+        "fields": [
+            { "name": "name", "type": "string"},
+            { "name": "type", "type": "string"}
+            ]
+    }
+))
 
 # io.confluent.kafka.serializers.subject.TopicNameStrategy: (default):
 # The subject name for message keys is <topic>-key, and <topic>-value for message values.
