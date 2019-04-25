@@ -14,15 +14,20 @@ $ ./confluent-5.2.1/bin/confluent destroy
 $ ./confluent-5.2.1/bin/confluent start
 ```
 
-# BASIC-JAVA-PRODUCER
-## Project Setup: basic-java-producer
+# java-producers
+## Project Setup: java-producers
 ```
-$ mvn -B archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.dh.app -DartifactId=basic-java-producer
+$ mvn -B archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.dh.app -DartifactId=java-producers
 ```
 - https://docs.confluent.io/current/clients/install.html#installation-maven
-## To Run: basic-java-producer
+## To Run: java-producers
 ```
-kafka-producer-example/basic-java-producer $ mvn clean compile exec:java -Dexec.mainClass="com.dh.app.App"
+kafka-producer-example/java-producers $ mvn clean compile exec:java -Dexec.mainClass="com.dh.app.BasicProducer"
+<!-- Examples included for the following naming strategies:
+- io.confluent.kafka.serializers.subject.TopicNameStrategy
+- io.confluent.kafka.serializers.subject.RecordNameStrategy
+- io.confluent.kafka.serializers.subject.TopicRecordNameStrategy  -->
+kafka-producer-example/java-producers $ mvn clean compile exec:java -Dexec.mainClass="com.dh.app.AvroProducer"
 ```
 
 ---
